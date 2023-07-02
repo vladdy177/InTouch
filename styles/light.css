@@ -1,0 +1,571 @@
+css for basic page style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: lightseagreen;
+    min-width: 600px;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    min-width: 600px;
+    width: 80%;
+    background-color: white;
+    font-family: 'Kanit', sans-serif;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: teal;
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    min-width: 600px;
+}
+
+.heading a , .heading-form a{
+    color:#b6f800;
+    display: flex;
+    min-width: 160px;
+    width: 30%;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.nav-links-rec {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+}
+
+
+.nav-links-form, .nav-links {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 16px;
+}
+
+.nav-links a:hover {
+    background-color: lightseagreen;
+    border-radius: 20px;
+
+}
+/* css for recen */
+.recen-block {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: auto 0;
+    flex-basis: 100%;
+    padding: 1vw;
+    
+}
+
+.text-block-rec {
+    font-size: large;
+    width: 100%;
+    border-radius: 2em;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.05);
+    background: linear-gradient(#f3f3f3, white);
+    margin: 1em 1em;
+    padding: 2em 1em;
+}
+.opinion{
+    display: flex;
+    flex-direction: column;
+    border-top: black 0.1em solid;
+    margin-top: 3em;
+    padding-top: 3em;
+    
+}
+.opinion a {
+    color:black;
+}
+
+.opinion a:hover {
+    color: lightseagreen;    
+}
+
+.top-img-rec img {
+    width: 100%;
+    border-radius: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    margin: 1em 0 0;
+}
+
+.img-rec {
+    width: 90%;
+    margin: 1em 3.1em 0;
+}
+
+.text-block p {
+    padding: 1em 0;
+    margin: 0 3em;
+}
+
+.img-descr, .text-block h1 {
+    text-align: center;
+}
+
+.img-descr {
+    font-size: medium;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+/* css for form */
+.form-window{
+    display: flex;
+    justify-content: center;
+}
+
+.form-data, .profile-window {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 1vw;
+    border-radius: 20px;
+    width: 40em;
+    height: 40em;
+    margin: 2em;
+}
+
+form, .informacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* css for styling inputs */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input {
+    background-color: black;
+    color: white;
+    margin: 1em 0;
+    border: none;
+    border-bottom: .125em solid white;
+    text-align: center;
+    outline: none;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: .125em solid white;
+}
+
+input[type="submit"]:hover, #log-in-but:hover, #register-but:hover {
+    border: .1em solid white;
+} 
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 11em;
+    height: 2em;
+    background-color: rgb(195, 15, 35);
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1em;
+    padding-bottom:2px;
+    cursor: pointer;
+}
+
+/* css for control inputs using JS */
+
+input.error {
+    border-bottom: 1px solid red;
+
+}
+
+.wrong {
+    color: red;
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 0.7em;
+}
+.right {
+    color: greenyellow;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 0.7em;
+}
+
+.js-input-checkbox.error + .checkbox-label{
+    color: red;
+}
+
+input[type="text"]:active, input[type="password"]:active, input[type="email"]K:active{
+    background: none;
+}
+
+/* css for LOGIN and REGISTRATION buttons */
+
+#register-but {
+    background-color: rgb(195, 15, 35);
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: none;
+    width: 11em;
+    height: 2em;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+}
+
+#register-but:visited, a#log-in-but:visited {
+    color: white;
+}
+
+#log-in-but {
+    background-color: #5e8002;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: none;
+    text-align: center;
+    width: 11em;
+    height: 2em;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+}
+
+.log-reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25em;
+    border-top: 0.1em dashed white ;
+    margin-top: 2em;
+    padding-top: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/* css for news page */
+.text-block h1 {
+    text-align: center;
+}
+
+.text-block {
+    width: 100%;
+    border-radius: 2em;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.05);
+    background: linear-gradient(#f3f3f3, white);
+    margin: 0.5em 1em;
+    padding: 1em 1em;
+}
+
+.top-img img {
+    width: 100%;
+    border-radius: 1.5em;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.news-img {
+    width: 100%;
+    padding: 1em 3.1em 0;
+}
+
+.text-block p {
+    padding: 1em;
+    margin: 0 3em;
+    font-size: 1.3em;
+
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+/* css for comment sectionL */
+.comments,  form {
+    width: 100%;
+    text-align: center;
+}
+
+.comment{
+    justify-content: space-around;
+}
+
+.btn {
+    background: #fff;
+    font-weight: 600;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 6%);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 20px 30px;
+    display: block;
+    float: left;
+}
+
+.comment-area {
+    justify-content: space-around;
+    display: flex;
+    width: 90%;
+    height: 150px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin: 35px;
+}
+
+.comments-db{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 20px;
+    margin: 35px;
+}
+
+.solo-user {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    border-bottom: #424242 solid 2px;
+}
+
+.solo-user p{
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.commsFromDb h3 {
+    text-align: center;
+}
+
+.commsFromDb{
+    width: 100%;
+}
+
+
+
+/* css for admin tools */
+.admin {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-weight: 600;
+    
+}
+
+.admin a{
+    margin-top: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color:black;
+}
+
+.admin a:visited {
+    color: black;
+}
+/* css for main bocks */
+.main-blocks {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex-basis: 45%;
+    padding: 0 0 3%;
+}
+
+.main-blocks a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-blocks a:hover{
+    text-decoration: underline;
+    color: rgb(49, 49, 49);
+}
+
+.main-blocks h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.category, .date {
+    background: #fff;
+    font-weight: 600;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 6%);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 6px;
+    display: block;
+    float: left;
+}
+
+.news-block {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    padding: 1vw;
+    
+}
+
+
+.main-blocks h1, .main-blocks h3 {
+    margin: 0.5em 1em;
+}
+
+.main-block {
+    text-align: left;
+    width: 25rem;
+    border-radius: 2em;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.05);
+    background: linear-gradient( white, #f3f3f3);
+    margin: 2em 1em 0;
+    padding: 1em;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 1.5em;
+    padding: 0;
+    min-width: 400px;
+}
+
+.padding {
+    display: flex;
+    justify-content: center;
+}
+
+.page-btn {
+    background: #fff;
+    font-weight: 600;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 10px;
+    border: none;
+    display: block;   
+}
+
+.page-btn:hover{
+    cursor: pointer;
+}
+
+.padding a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css for footer */
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 2em 0;
+    border-top: #b8b8b8 solid 0.1em;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info p {
+    font-weight: 100;
+    padding: 0.5em;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.footer-info h3 {
+    font-size: 2em;
+    color:#424242;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    .header, footer, nav {
+      display: none;
+    }
+    .main-block {
+        margin-bottom: 100px;
+        /* padding: 50px; */
+    }
+    .main-block img{
+        display: none;
+    }
+    .opinion{
+        display: none;
+    }
+    form {
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 800px) {
+.nav {
+    width: 80%;
+}
+
+.recen-block, .main-blocks {
+    row-gap: 20px;
+    margin: 20px 20px;
+}
+
+.comms {
+    margin-top: 50px;
+}
+
+.news-text {
+    width: 80%;
+}
+
+.html {
+    width: 80vh;
+}}

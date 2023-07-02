@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: lightseagreen;
+    min-width: 600px;
+}
+
+body{
+    margin: 0 auto;
+    min-width: 600px;
+    width: 80%;
+    background-color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: teal;
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    min-width: 600px;
+}
+
+.heading a {
+    color:#b6f800;
+    display: flex;
+    min-width: 160px;
+    width: 30%;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.5vh;
+    padding: 14px 16px;
+}
+
+.nav-links a:hover {
+    background-color: lightseagreen;
+    border-radius: 20px;
+
+}
+
+.form-window{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+
+}
+
+.form-data {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 1vw;
+    border-radius: 20px;
+    width: 40em;
+    height: 40em;
+    margin: 2em 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input {
+    background-color: black;
+    color: white;
+    margin: 1em 0;
+    border: none;
+    border-bottom: .125em solid white;
+    text-align: center;
+    outline: none;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: .125em solid white;
+}
+
+input[type="submit"]:hover, #log-in-but:hover, #register-but:hover {
+    border: .1em solid white;
+} 
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 11em;
+    height: 2em;
+    background-color: rgb(195, 15, 35);
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1em;
+    padding-bottom:2px;
+    cursor: pointer;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input[type="checkbox"].error {
+    color: red;
+}
+
+#register-but {
+    background-color: rgb(195, 15, 35);
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: none;
+    width: 11em;
+    height: 2em;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+}
+
+#register-but:visited, a#log-in-but:visited {
+    color: white;
+}
+
+#log-in-but {
+    background-color: #5e8002;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: none;
+    text-align: center;
+    width: 11em;
+    height: 2em;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+}
+
+.log-reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25em;
+    border-top: 0.1em dashed white ;
+    margin-top: 2em;
+    padding-top: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #e4e4e4;
+    padding: 2em 0;
+    border-top: #b8b8b8 solid 0.1em;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info p {
+    font-weight: 100;
+    padding: 0.5em;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.footer-info h3 {
+    font-size: 2em;
+    color:#424242;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
